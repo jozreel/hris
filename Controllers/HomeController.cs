@@ -10,6 +10,8 @@ namespace hris.Controllers
     {
         public IActionResult Index()
         {
+            
+            config.EnableCors();
             return View();
         }
 
