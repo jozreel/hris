@@ -11,7 +11,7 @@ namespace hris.Controllers
         public IActionResult Index()
         {
             
-            config.EnableCors();
+            Response.AppendHeader("Access-Control-Allow-Origin", "*");
             return View();
         }
 
